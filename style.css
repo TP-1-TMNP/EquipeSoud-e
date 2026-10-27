@@ -9,3 +9,9 @@ header, footer {
     padding: 20px;
     text-align: center;
 }
+.membre {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+}
