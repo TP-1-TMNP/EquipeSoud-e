@@ -2,3 +2,10 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+
+header, footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
