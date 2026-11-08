@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.membre {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+}
