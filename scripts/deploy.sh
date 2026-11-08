@@ -1,19 +1,20 @@
-DOSSIER=~/serveur/site-equipe
 
+#!/bin/bash
 
-if [ ! -d "$DOSSIER" ]; then
-    echo "Erreur : le dossier $DOSSIER n'existe pas"
-    exit 1
-fi
+# Arreter le script si une commande echoue
+set -e
 
+# Retrouver le dossier du projet a partir du script
+DOSSIER="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-cd "$DOSSIER" || exit 1
+# Aller dans le dossier du projet
+cd "$DOSSIER"
 
+# Recuperer les dernieres modifications de GitHub
+git pull --ff-only
 
-git pull
-
-
+# Copier les fichiers du site sur le serveur Nginx
 sudo cp index.html style.css /var/www/html/
 
-
-echo "Déploiement terminé"
+# Afficher un message quand tout est termine
+echo "Deploiement termine"
