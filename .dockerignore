@@ -1,0 +1,6 @@
+# Ce qui ne doit pas partir dans l'image : historique git, doc et scripts de deploiement.
+.git
+README.md
+scripts/
+Dockerfile
+.dockerignore
